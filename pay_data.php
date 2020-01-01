@@ -46,6 +46,12 @@
     <a type="button" class="btn btn-outline-info" href="pay_data_chart.php">圖表</a>
 </div>
 
+<div  id="alt" class="" style=" position: fixed;top: 1px; left:2%;width: 96%;text-align:center;">
+   
+</div>    
+<div class="container">
+  <button id="bt" type="button" class="btn btn-primary btn-md">Default</button>    
+</div>    
  <!--------------------------------以下為表格------------------------------------------> 
  <table class="table table-condensed">
 	<caption>精简表格布局</caption>
@@ -72,7 +78,35 @@
      
 </table>
    
-    
+    <script>
+        $(document).ready(function(){
+            
+            $.ajax({
+                type : 'GET',
+                url : 'get_max_min.php',
+                dataType : 'html',
+                
+                
+            }).done(function(msg){
+                
+                $('#bt').click(function(){
+
+                   $('#alt').html("最高薪資與公司:"+" "+msg).addClass("alert alert-success").hide().fadeIn("slow").fadeOut(4000);
+                    
+            });
+                
+                
+                console.log(msg);
+            }).fail(function(){
+                
+                console.log("f");
+            });
+            
+            //$('#alt').fadeOut();
+            
+        });
+        
+    </script>
     
     
     
