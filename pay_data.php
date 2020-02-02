@@ -22,39 +22,40 @@
   <div class="jumbotron">
     <h1 class="text-center">數據分析</h1>      
     <div class="container">
-  <h2>Pills with Dropdown</h2>
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link" href="First.php">首頁</a>
+      <a class="nav-link" href="First.html">首頁</a>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">數據</a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="pay_data.php">新資行情</a>
-        <a class="dropdown-item" href="#">房屋價格</a>
-        <a class="dropdown-item" href="#">Link 3</a></div>
+        <a class="dropdown-item" href="TC_Accident_data.php">台中易肇事路段</a>
+        <!--<a class="dropdown-item" href="#">Link 3</a>-->
+      </div>
     </li>
+<!--
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
     </li>
+-->
+<!--
     <li class="nav-item">
       <a class="nav-link disabled" href="#">Disabled</a>
     </li>
+-->
   </ul>
 </div>
   </div>  
-    <a type="button" class="btn btn-outline-info" href="pay_data_chart.php">圖表</a>
+    <a type="button" class="btn btn-primary btn-md" href="pay_data_chart.php" >圖表分析</a>
 </div>
-
-<div  id="alt" class="" style=" position: fixed;top: 1px; left:2%;width: 96%;text-align:center;">
-   
+<div  id="alt" class="" style=" position: fixed;top: 1px; left:2%;width: 96%;text-align:center;"> 
 </div>    
-<div class="container">
-  <button id="bt" type="button" class="btn btn-primary btn-md">Default</button>    
+<div class="container" >
+  <button id="bt" type="button" class="btn btn-outline-info" style="position: relative;top: -40px; left: 110px ;height:50px;width :200px;letter-spacing: 20px;border" >最高薪</button>    
 </div>    
  <!--------------------------------以下為表格------------------------------------------> 
  <table class="table table-condensed">
-	<caption>精简表格布局</caption>
 	<thead>
 		<tr>
 			<th>公司</th>
